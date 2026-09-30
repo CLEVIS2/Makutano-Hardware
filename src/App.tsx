@@ -5,6 +5,11 @@ import bamburiCement from './images/cement image/bamburi cement.jpg'
 import mombasaCement from './images/cement image/mombasa cement.png'
 import ndovuCement from './images/cement image/ndovu cement.png'
 import nguvuCement from './images/cement image/nguvu cement.jpg'
+import machineCutStones from './images/masonry image/machine cut stones 9 by 9.jpg'
+import concreteBlocks from './images/masonry image/concrete block 6 inches.jpg'
+import clayBricks from './images/masonry image/clay building bricks.jpg'
+import wallTiles from './images/masonry image/wall tiles.jpg'
+import ballast from './images/masonry image/ballast.jpg'
 import wheelbarrowImage from './assets/wheelbarrow.svg'
 import hammerImage from './assets/hammer.svg'
 
@@ -17,33 +22,35 @@ const startingProducts: Product[] = [
   { id: 3, name: 'Mombasa Cement 50kg', brand: 'Mombasa', category: 'Cement', price: 760, cost: 635, stock: 31, unit: 'bag', image: mombasaCement },
   { id: 4, name: 'Ndovu Cement 50kg', brand: 'Ndovu', category: 'Cement', price: 840, cost: 700, stock: 27, unit: 'bag', image: ndovuCement },
   { id: 5, name: 'Nguvu Cement 50kg', brand: 'Nguvu', category: 'Cement', price: 800, cost: 670, stock: 35, unit: 'bag', image: nguvuCement },
-  { id: 6, name: 'Machine Cut Stones 6×9', brand: 'Makutano Select', category: 'Masonry', price: 65, cost: 45, stock: 420, unit: 'piece', image: 'photo-1590725140246-20acddd5a29f', tag: 'POPULAR' },
-  { id: 7, name: 'Machine Cut Stones 9×9', brand: 'Makutano Select', category: 'Masonry', price: 75, cost: 52, stock: 290, unit: 'piece', image: 'photo-1590725140246-20acddd5a29f' },
-  { id: 8, name: 'Concrete Blocks 6 inch', brand: 'Makutano Select', category: 'Masonry', price: 95, cost: 68, stock: 180, unit: 'piece', image: 'photo-1590725140246-20acddd5a29f' },
-  { id: 9, name: 'Clay Building Bricks', brand: 'Local Kiln', category: 'Masonry', price: 28, cost: 18, stock: 850, unit: 'piece', image: 'photo-1590725140246-20acddd5a29f' },
-  { id: 10, name: 'DumuZas Mabati 2.5m', brand: 'Mabati Rolling Mills', category: 'Roofing', price: 1950, cost: 1620, stock: 24, unit: 'sheet', image: 'photo-1635424710928-3e6e9d4e9c4d', tag: 'POPULAR' },
-  { id: 11, name: 'Versatile Roofing 3m', brand: 'Mabati Rolling Mills', category: 'Roofing', price: 2450, cost: 2050, stock: 19, unit: 'sheet', image: 'photo-1635424710928-3e6e9d4e9c4d' },
-  { id: 12, name: 'Box Profile 2.5m', brand: 'Royal Mabati', category: 'Roofing', price: 1800, cost: 1470, stock: 32, unit: 'sheet', image: 'photo-1635424710928-3e6e9d4e9c4d' },
-  { id: 13, name: 'Corrugated Iron Sheet 2.5m', brand: 'Imarisha Mabati', category: 'Roofing', price: 1550, cost: 1290, stock: 0, unit: 'sheet', image: 'photo-1635424710928-3e6e9d4e9c4d' },
-  { id: 14, name: 'Common Wire Nails 2 inch', brand: 'Kamal', category: 'Fasteners', price: 250, cost: 185, stock: 18, unit: 'kg', image: 'photo-1586864387967-d02ef85d93e8' },
-  { id: 15, name: 'Common Wire Nails 3 inch', brand: 'Kamal', category: 'Fasteners', price: 240, cost: 178, stock: 25, unit: 'kg', image: 'photo-1586864387967-d02ef85d93e8' },
-  { id: 16, name: 'Roofing Nails 3 inch', brand: 'Kamal', category: 'Fasteners', price: 280, cost: 210, stock: 12, unit: 'kg', image: 'photo-1586864387967-d02ef85d93e8' },
-  { id: 17, name: 'Binding Wire 18G', brand: 'Doshi', category: 'Fasteners', price: 180, cost: 130, stock: 28, unit: 'kg', image: 'photo-1586864387967-d02ef85d93e8' },
-  { id: 18, name: 'Steel Bar Y12 12m', brand: 'Devki Steel Mills', category: 'Steel', price: 1250, cost: 1010, stock: 36, unit: 'piece', image: 'photo-1504917595217-d4dc5ebe6122', tag: 'IN DEMAND' },
-  { id: 19, name: 'Steel Bar Y10 12m', brand: 'Devki Steel Mills', category: 'Steel', price: 880, cost: 710, stock: 45, unit: 'piece', image: 'photo-1504917595217-d4dc5ebe6122' },
-  { id: 20, name: 'Steel Bar Y8 12m', brand: 'Tononoka', category: 'Steel', price: 590, cost: 475, stock: 52, unit: 'piece', image: 'photo-1504917595217-d4dc5ebe6122' },
-  { id: 21, name: 'BRC Mesh A142', brand: 'BRC Kenya', category: 'Steel', price: 5200, cost: 4400, stock: 9, unit: 'sheet', image: 'photo-1504917595217-d4dc5ebe6122' },
-  { id: 22, name: 'Wheelbarrow 100L', brand: 'Maan', category: 'Tools', price: 6800, cost: 5450, stock: 8, unit: 'piece', image: wheelbarrowImage, tag: 'HEAVY DUTY' },
-  { id: 23, name: 'Jembe No. 2', brand: 'Maan', category: 'Tools', price: 850, cost: 620, stock: 16, unit: 'piece', image: 'photo-1581578731548-c64695cc6952' },
-  { id: 24, name: 'Mason Hand Trowel', brand: 'Ingco', category: 'Tools', price: 650, cost: 430, stock: 11, unit: 'piece', image: 'photo-1581578731548-c64695cc6952' },
-  { id: 25, name: 'Claw Hammer 16oz', brand: 'Ingco', category: 'Tools', price: 1200, cost: 840, stock: 7, unit: 'piece', image: hammerImage, tag: 'HEAVY DUTY' },
-  { id: 26, name: 'PVC Pipe 4 inch 6m', brand: 'TopTank', category: 'Plumbing', price: 1850, cost: 1470, stock: 20, unit: 'length', image: 'photo-1607472586893-edb57bdc0e39' },
-  { id: 27, name: 'PVC Pipe 2 inch 6m', brand: 'TopTank', category: 'Plumbing', price: 720, cost: 540, stock: 33, unit: 'length', image: 'photo-1607472586893-edb57bdc0e39' },
-  { id: 28, name: 'PPR Pipe 20mm', brand: 'Danco', category: 'Plumbing', price: 320, cost: 220, stock: 40, unit: 'length', image: 'photo-1607472586893-edb57bdc0e39' },
-  { id: 29, name: 'Acrylic Wall Paint 20L', brand: 'Crown Paints', category: 'Paint', price: 6200, cost: 5100, stock: 13, unit: 'tin', image: 'photo-1562259949-e8e7689d7828', tag: 'TOP PICK' },
-  { id: 30, name: 'Weather Guard 4L', brand: 'Plascon', category: 'Paint', price: 2100, cost: 1650, stock: 17, unit: 'tin', image: 'photo-1562259949-e8e7689d7828' },
-  { id: 31, name: 'Gloss Enamel 1L', brand: 'Crown Paints', category: 'Paint', price: 950, cost: 720, stock: 14, unit: 'tin', image: 'photo-1562259949-e8e7689d7828' },
-  { id: 32, name: 'PPR Gate Valve 20mm', brand: 'Danco', category: 'Plumbing', price: 550, cost: 390, stock: 6, unit: 'piece', image: 'photo-1607472586893-edb57bdc0e39' },
+  { id: 6, name: 'Machine Cut Stones 6×9', brand: 'Makutano Select', category: 'Masonry', price: 65, cost: 45, stock: 420, unit: 'piece', image: machineCutStones, tag: 'POPULAR' },
+  { id: 7, name: 'Machine Cut Stones 9×9', brand: 'Makutano Select', category: 'Masonry', price: 75, cost: 52, stock: 290, unit: 'piece', image: machineCutStones },
+  { id: 8, name: 'Concrete Blocks 6 inch', brand: 'Makutano Select', category: 'Masonry', price: 95, cost: 68, stock: 180, unit: 'piece', image: concreteBlocks },
+  { id: 9, name: 'Clay Building Bricks', brand: 'Local Kiln', category: 'Masonry', price: 28, cost: 18, stock: 850, unit: 'piece', image: clayBricks },
+  { id: 10, name: 'Wall Tiles', brand: 'Makutano Select', category: 'Masonry', price: 220, cost: 170, stock: 210, unit: 'piece', image: wallTiles },
+  { id: 11, name: 'Ballast', brand: 'Makutano Select', category: 'Masonry', price: 3100, cost: 2550, stock: 90, unit: 'ton', image: ballast },
+  { id: 12, name: 'DumuZas Mabati 2.5m', brand: 'Mabati Rolling Mills', category: 'Roofing', price: 1950, cost: 1620, stock: 24, unit: 'sheet', image: 'photo-1635424710928-3e6e9d4e9c4d', tag: 'POPULAR' },
+  { id: 13, name: 'Versatile Roofing 3m', brand: 'Mabati Rolling Mills', category: 'Roofing', price: 2450, cost: 2050, stock: 19, unit: 'sheet', image: 'photo-1635424710928-3e6e9d4e9c4d' },
+  { id: 14, name: 'Box Profile 2.5m', brand: 'Royal Mabati', category: 'Roofing', price: 1800, cost: 1470, stock: 32, unit: 'sheet', image: 'photo-1635424710928-3e6e9d4e9c4d' },
+  { id: 15, name: 'Corrugated Iron Sheet 2.5m', brand: 'Imarisha Mabati', category: 'Roofing', price: 1550, cost: 1290, stock: 0, unit: 'sheet', image: 'photo-1635424710928-3e6e9d4e9c4d' },
+  { id: 16, name: 'Common Wire Nails 2 inch', brand: 'Kamal', category: 'Fasteners', price: 250, cost: 185, stock: 18, unit: 'kg', image: 'photo-1586864387967-d02ef85d93e8' },
+  { id: 17, name: 'Common Wire Nails 3 inch', brand: 'Kamal', category: 'Fasteners', price: 240, cost: 178, stock: 25, unit: 'kg', image: 'photo-1586864387967-d02ef85d93e8' },
+  { id: 18, name: 'Roofing Nails 3 inch', brand: 'Kamal', category: 'Fasteners', price: 280, cost: 210, stock: 12, unit: 'kg', image: 'photo-1586864387967-d02ef85d93e8' },
+  { id: 19, name: 'Binding Wire 18G', brand: 'Doshi', category: 'Fasteners', price: 180, cost: 130, stock: 28, unit: 'kg', image: 'photo-1586864387967-d02ef85d93e8' },
+  { id: 20, name: 'Steel Bar Y12 12m', brand: 'Devki Steel Mills', category: 'Steel', price: 1250, cost: 1010, stock: 36, unit: 'piece', image: 'photo-1504917595217-d4dc5ebe6122', tag: 'IN DEMAND' },
+  { id: 21, name: 'Steel Bar Y10 12m', brand: 'Devki Steel Mills', category: 'Steel', price: 880, cost: 710, stock: 45, unit: 'piece', image: 'photo-1504917595217-d4dc5ebe6122' },
+  { id: 22, name: 'Steel Bar Y8 12m', brand: 'Tononoka', category: 'Steel', price: 590, cost: 475, stock: 52, unit: 'piece', image: 'photo-1504917595217-d4dc5ebe6122' },
+  { id: 23, name: 'BRC Mesh A142', brand: 'BRC Kenya', category: 'Steel', price: 5200, cost: 4400, stock: 9, unit: 'sheet', image: 'photo-1504917595217-d4dc5ebe6122' },
+  { id: 24, name: 'Wheelbarrow 100L', brand: 'Maan', category: 'Tools', price: 6800, cost: 5450, stock: 8, unit: 'piece', image: wheelbarrowImage, tag: 'HEAVY DUTY' },
+  { id: 25, name: 'Jembe No. 2', brand: 'Maan', category: 'Tools', price: 850, cost: 620, stock: 16, unit: 'piece', image: 'photo-1581578731548-c64695cc6952' },
+  { id: 26, name: 'Mason Hand Trowel', brand: 'Ingco', category: 'Tools', price: 650, cost: 430, stock: 11, unit: 'piece', image: 'photo-1581578731548-c64695cc6952' },
+  { id: 27, name: 'Claw Hammer 16oz', brand: 'Ingco', category: 'Tools', price: 1200, cost: 840, stock: 7, unit: 'piece', image: hammerImage, tag: 'HEAVY DUTY' },
+  { id: 28, name: 'PVC Pipe 4 inch 6m', brand: 'TopTank', category: 'Plumbing', price: 1850, cost: 1470, stock: 20, unit: 'length', image: 'photo-1607472586893-edb57bdc0e39' },
+  { id: 29, name: 'PVC Pipe 2 inch 6m', brand: 'TopTank', category: 'Plumbing', price: 720, cost: 540, stock: 33, unit: 'length', image: 'photo-1607472586893-edb57bdc0e39' },
+  { id: 30, name: 'PPR Pipe 20mm', brand: 'Danco', category: 'Plumbing', price: 320, cost: 220, stock: 40, unit: 'length', image: 'photo-1607472586893-edb57bdc0e39' },
+  { id: 31, name: 'Acrylic Wall Paint 20L', brand: 'Crown Paints', category: 'Paint', price: 6200, cost: 5100, stock: 13, unit: 'tin', image: 'photo-1562259949-e8e7689d7828', tag: 'TOP PICK' },
+  { id: 32, name: 'Weather Guard 4L', brand: 'Plascon', category: 'Paint', price: 2100, cost: 1650, stock: 17, unit: 'tin', image: 'photo-1562259949-e8e7689d7828' },
+  { id: 33, name: 'Gloss Enamel 1L', brand: 'Crown Paints', category: 'Paint', price: 950, cost: 720, stock: 14, unit: 'tin', image: 'photo-1562259949-e8e7689d7828' },
+  { id: 34, name: 'PPR Gate Valve 20mm', brand: 'Danco', category: 'Plumbing', price: 550, cost: 390, stock: 6, unit: 'piece', image: 'photo-1607472586893-edb57bdc0e39' },
 ]
 
 const categories = ['All products', 'Cement', 'Masonry', 'Roofing', 'Fasteners', 'Steel', 'Tools', 'Plumbing', 'Paint']
@@ -62,11 +69,11 @@ function loadStored<T>(key: string, fallback: T): T {
     const parsed = JSON.parse(value) as T
 
     if (key === 'makutano-products' && Array.isArray(parsed)) {
-      const requiredNames = ['Simba Cement 50kg', 'Bamburi Cement 50kg', 'Mombasa Cement 50kg', 'Ndovu Cement 50kg', 'Nguvu Cement 50kg']
+      const requiredNames = ['Simba Cement 50kg', 'Bamburi Cement 50kg', 'Mombasa Cement 50kg', 'Ndovu Cement 50kg', 'Nguvu Cement 50kg', 'Machine Cut Stones 6×9', 'Concrete Blocks 6 inch', 'Clay Building Bricks', 'Wall Tiles', 'Ballast']
       const catalog = parsed as Array<{ name?: string }>
-      const hasRequiredCement = requiredNames.every((name) => catalog.some((item) => item?.name === name))
+      const hasRequiredCatalog = requiredNames.every((name) => catalog.some((item) => item?.name === name))
 
-      if (!hasRequiredCement) {
+      if (!hasRequiredCatalog) {
         localStorage.setItem(key, JSON.stringify(fallback))
         return fallback
       }
