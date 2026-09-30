@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800" role="img" aria-label="Wheelbarrow">
+  <defs>
+    <linearGradient id="metal" x1="0" x2="1">
+      <stop offset="0%" stop-color="#cfe4ea"/>
+      <stop offset="100%" stop-color="#7ea5b4"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="800" fill="#f1f5f7"/>
+  <g transform="translate(80 120)">
+    <ellipse cx="300" cy="520" rx="190" ry="36" fill="#c6d1d6"/>
+    <circle cx="300" cy="520" r="72" fill="#7d8f97" stroke="#4d6067" stroke-width="12"/>
+    <circle cx="300" cy="520" r="28" fill="#dfeaf0"/>
+    <path d="M170 190 L380 190 L455 420 L285 420 Q205 420 170 190 Z" fill="url(#metal)" stroke="#4a6980" stroke-width="10"/>
+    <path d="M172 190 L235 110 L475 110 L390 190 Z" fill="#9ec0cb" stroke="#4a6980" stroke-width="10"/>
+    <path d="M173 189 L210 420" stroke="#4a6980" stroke-width="10"/>
+    <path d="M378 189 L339 420" stroke="#4a6980" stroke-width="10"/>
+    <path d="M200 225 L330 225" stroke="#4a6980" stroke-width="7" opacity="0.7"/>
+    <path d="M185 420 L310 420" stroke="#4a6980" stroke-width="12"/>
+    <path d="M245 145 L297 80 L330 80 L366 145" fill="none" stroke="#4a6980" stroke-width="10"/>
+    <path d="M252 140 L230 98" stroke="#4a6980" stroke-width="10"/><path d="M340 140 L362 98" stroke="#4a6980" stroke-width="10"/>
+    <path d="M198 420 L250 510" stroke="#4a6980" stroke-width="10"/>
+    <path d="M372 420 L318 510" stroke="#4a6980" stroke-width="10"/>
+  </g>
+</svg>

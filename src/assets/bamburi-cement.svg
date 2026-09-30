@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800" role="img" aria-label="Bamburi cement bag">
+  <defs>
+    <linearGradient id="bg2" x1="0" x2="1">
+      <stop offset="0%" stop-color="#edf3f9"/>
+      <stop offset="100%" stop-color="#d3dfe7"/>
+    </linearGradient>
+    <linearGradient id="bag2" x1="0" x2="1">
+      <stop offset="0%" stop-color="#f0f4f6"/>
+      <stop offset="100%" stop-color="#d8d0c0"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="800" fill="url(#bg2)"/>
+  <g transform="translate(145 80)">
+    <path d="M120 40 L420 40 L470 630 L70 630 Z" fill="url(#bag2)" stroke="#866a3f" stroke-width="12"/>
+    <path d="M150 40 L195 0 L420 0 L470 40" fill="#e5e8ec" stroke="#866a3f" stroke-width="10"/>
+    <path d="M100 130 L440 130" stroke="#7e6940" stroke-width="8" opacity="0.8"/>
+    <path d="M100 260 L440 260" stroke="#7e6940" stroke-width="8" opacity="0.8"/>
+    <path d="M100 390 L440 390" stroke="#7e6940" stroke-width="8" opacity="0.8"/>
+    <path d="M100 520 L440 520" stroke="#7e6940" stroke-width="8" opacity="0.8"/>
+    <rect x="120" y="180" width="310" height="120" rx="16" fill="#1e4f9f"/>
+    <text x="275" y="250" text-anchor="middle" font-size="44" font-family="Arial, sans-serif" font-weight="700" fill="#f5f7fb">BAMBURI</text>
+    <text x="275" y="355" text-anchor="middle" font-size="34" font-family="Arial, sans-serif" font-weight="700" fill="#42341a">50 KG</text>
+    <text x="275" y="470" text-anchor="middle" font-size="33" font-family="Arial, sans-serif" font-weight="700" fill="#42341a">CEMENT</text>
+    <text x="275" y="570" text-anchor="middle" font-size="28" font-family="Arial, sans-serif" font-weight="600" fill="#42341a">STRONGER FOUNDATIONS</text>
+  </g>
+</svg>
